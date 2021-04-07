@@ -7,41 +7,35 @@ Neuroevolution of Augmenting Topologies (NEAT) algorithm in numpy, built for mul
 
 Original paper by Ken Stanley and Risto Miikkulainen: [Evolving Neural Networks Through Augmenting Topologies](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.28.5457&rep=rep1&type=pdf)
 
-## Dependencies
+Implementation created by [Adam
+Gaier](https://scholar.google.com/citations?user=GGyARB8AAAAJ&hl=en) and
+originally released as part of the [Google Brain Tokyo
+Workshop](https://github.com/google/brain-tokyo-workshop). Maintained by Dennis
+G. Wilson.
 
-Core algorithm tested with:
+## Installation
 
-- Python 3.5.3
+prettyNEAT can be downloaded from pypi:
 
-- NumPy 1.15.2 (`pip install numpy`)
+`pip install prettyNEAT`
 
-- mpi4py 3.0.1 (`pip install mpi4py`)
+Or installed locally
 
-- OpenAI Gym 0.9.6 (`pip install gym` -- installation details [here](https://github.com/openai/gym))
+``` sh
+git clone https://github.com/d9w/prettyNEAT
+cd prettyNEAT
+python setup.py install
+```
 
+### Other dependencies
 
-Domains tested with:
+The provided example scripts which evolve individuals for `gym` environments
+have further dependencies, including `mpi4py` for distributed evaluation. To
+install these additional dependencies, do:
 
-- Cart-pole Swing-up (included, but requires OpenAI gym)
+`pip install -r requirements.txt`
 
-- Bipedal Walker: Box2d (see OpenAI gym installation)
-
-- Quadruped (Ant) Walker: PyBullet 1.6.3 (`pip install pybullet`)
-
-- MNIST: Mnist utilities 0.2.2 (`pip install mnist`)
-
-- VAE Racer: 
-    - Tensorflow 1.8 (`pip install tensorflow==1.8.0`)
-    - Pretrained VAE (in [wannRelease](../) -- copy to root to use, e.g: `cp -r ../vae .`)
-
-
-To tune weights of produced network topologies
-
-- CMA-ES: cma 2.6.0 (`pip install cma`)
-
-
-
-## Training and Viewing Results
+## Running NEAT
 
 ![swingup](demo/img/swing.gif) ![swingup](demo/img/swing.gif)
 

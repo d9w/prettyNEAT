@@ -1,0 +1,6 @@
+numpy>=1.15.2
+mpi4py>=3.0.1
+gym>=0.9.6
+pybullet>=1.6.3
+mnist>=0.2.2
+matplotlib>=3.0.0
