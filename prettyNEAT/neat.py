@@ -3,8 +3,7 @@ import math
 import copy
 import json
 
-from domain import *  # Task environments
-from utils import *
+from .utils import *
 from .nsga_sort import nsga_sort
 
 
