@@ -25,7 +25,6 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     install_requires=[
         "numpy",
-        "json",
     ],
     python_requires=">=3.5",
 )
