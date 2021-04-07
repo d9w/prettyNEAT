@@ -77,7 +77,7 @@ class Ind():
     """Create new individual with this individual as a parent
 
       Args:
-        p      - (dict)     - algorithm hyperparameters (see p/hypkey.txt)
+        p      - (dict)     - algorithm hyperparameters (see config/hypkey.txt)
         innov  - (np_array) - innovation record
            [5 X nUniqueGenes]
            [0,:] == Innovation Number
@@ -149,7 +149,7 @@ class Ind():
     """Randomly alter topology and weights of individual
 
     Args:
-      p        - (dict)     - algorithm hyperparameters (see p/hypkey.txt)
+      p        - (dict)     - algorithm hyperparameters (see config/hypkey.txt)
       child    - (Ind) - individual to be mutated
         .conns - (np_array) - connection genes
                  [5 X nUniqueGenes] 
@@ -232,7 +232,7 @@ class Ind():
                  [3,:] == New Node?
                  [4,:] == Generation evolved
       gen      - (int) - current generation
-      p        - (dict)     - algorithm hyperparameters (see p/hypkey.txt)
+      p        - (dict)     - algorithm hyperparameters (see config/hypkey.txt)
 
 
     Returns:
@@ -321,7 +321,7 @@ class Ind():
                  [3,:] == New Node?
                  [4,:] == Generation evolved
       gen      - (int)      - current generation
-      p        - (dict)     - algorithm hyperparameters (see p/hypkey.txt)
+      p        - (dict)     - algorithm hyperparameters (see config/hypkey.txt)
 
 
     Returns:
